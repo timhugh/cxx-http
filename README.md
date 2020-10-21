@@ -1,6 +1,6 @@
 # SYNOPSIS
 
-A simple http server backed by [`libuv`](https://github.com/joyent/libuv)
+A simple http server backed by [`libuv`](https://github.com/libuv/libuv)
 and [`http-parser`](https://github.com/joyent/http-parser).
 
 # EXAMPLE
@@ -48,7 +48,7 @@ int main () {
 
 Just for fun. Without any real statistical significance, here are
 some quick averages from apache ab, run on an old macbook air. Also
-neat is that `nodeuv-http` server uses about `400KB` of memory 
+neat is that `nodeuv-http` server uses about `400KB` of memory
 (compared to Node.js' `10-15MB`).
 
 ### nodeuv-http
@@ -66,14 +66,14 @@ Runs on `OSX`, `Linux` and `Windows`.
 
 # DEVELOPMENT
 
-## REQUIREMENTS 
+## REQUIREMENTS
 
 ### OSX, Linux
 This project is made to work with C++11/14. So you'll either need
 fairly recent, stable releases of GCC (`~4.8.x`) or Clang (`~4.2.x`).
 
 ### Windows
-Windows doesn't have a compatible make tool. So you'll have to run 
+Windows doesn't have a compatible make tool. So you'll have to run
 this `build.bat` file to clone repos and run `gyp`.
 
 ## DEBUGGING
@@ -89,4 +89,3 @@ valgrind --leak-check=yes --track-origins=yes --dsymutil=yes ./server
 ```bash
 make
 ```
-
